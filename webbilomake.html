@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <title>Lomake</title>
+        <title>full background image</title>
+
+        
+         
+         <link href="style.css" media="screen" rel="stylesheet" title="main"> 
+
+    </head>
+    <body>
+<form method="GET action=handler.php"> 
+    <h1>Henkilötiedot</h1>
+    <label for="etunimi">Etunimi: </label>
+    <input type="text" id="etunimi" name="firstname">
+    <br/>
+    <label for="etunimi">Sukunimi: </label>
+    <input type="text" id="sukunimi" name="lastname">
+    <br/><br/>
+    <p>Sukupuoli</p>
+    <input type="radio" id="mies" name="sukupuoli" value="male">
+    <label for="mies">Mies</label><br/>
+    <input type="radio" id="nainen" name="sukupuoli" value="female">
+    <label for="nainen">Nainen</label><br/>
+    <input type="radio" id="muu" name="sukupuoli" value="other">
+    <label for="muu">Muu</label><br/>
+
+    <p>>Ikäluokka</p>
+    <select name="agerange">
+        <option value="child">0-12 vuotta</option>
+        <option value="young">13-35 vuotta</option>
+        <option value="adult">36-65 vuotta</option>
+        <option value="senior">66- vuotta</option>
+
+    </select>
+<br/><br/>
+<input type="reset">
+<input type="submit" value="Lähetä">
+
+</form>
+
+    </body>
+</html>
